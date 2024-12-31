@@ -157,10 +157,10 @@
     {
         "label": "app",
         "kind": 5,
-        "importPath": "run",
-        "description": "run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "app = create_app()\nif __name__ == '__main__':\n    app.run(debug=True)",
-        "detail": "run",
+        "detail": "app",
         "documentation": {}
     }
 ]
