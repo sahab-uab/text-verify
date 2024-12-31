@@ -1,0 +1,74 @@
+<header class="bg-white h-[80px] flex items-center justify-center">
+    <div class="container flex justify-between items-center">
+        <!-- Left Side Logo (visible on large screens) -->
+        <a href="/" ">
+            <img src=" {{ url_for('static', filename='imgs/logo.svg' ) }}" alt="Logo" class="w-[120px] h-auto">
+        </a>
+
+        <!-- Center Menu (visible on large screens) -->
+        <ul class="hidden md:flex items-center gap-x-7">
+            <li><a href="/"
+                class="text-base font-medium text-gray-500 duration-300 hover:text-gray-950">Home</a></li>
+            <li class="relative group">
+                <a href="/"
+                    class="text-base font-medium text-gray-500 duration-300 hover:text-gray-950 group/item">Product</a>
+                <i class="ri-arrow-drop-down-line group/icon duration-300 text-gray-500 group-hover:text-gry-950"></i>
+                <div
+                    class="absolute top-[100%] left-0 w-[150px] bg-white rounded-[10px] p-5 flex flex-col border border-gray-300 opacity-0 pointer-events-none transition-all duration-300 group/dropdown group-hover:opacity-100 group-hover:pointer-events-auto z-[2]">
+                    <a href="" class="text-gray-500 text-base font-normal duration-300 hover:text-gray-950">Overview</a>
+                    <a href="" class="mt-4 text-gray-500 text-base font-normal duration-300 hover:text-gray-950">More
+                        product</a>
+                </div>
+            </li>
+            </li>
+            <li><a href="/services"
+                    class="text-base font-medium text-gray-500 duration-300 hover:text-gray-950">About</a></li>
+            <li><a href="/contact"
+                    class="text-base font-medium text-gray-500 duration-300 hover:text-gray-950">Contact</a></li>
+        </ul>
+
+
+        <!-- Right Side Buttons -->
+        <div class="hidden md:flex items-center gap-x-5">
+            <a href="/login" class="text-gray-500 duration-300 hover:text-gray-950 text-base font-medium">Sign In</a>
+            <a href="/signup" class="btn primary">Sign up</a>
+        </div>
+
+        <!-- Mobile Sidebar Toggle Button (visible on small screens) -->
+        <button id="sidebar-toggle"
+            class="md:hidden text-gray-800 focus:outline-none hover:bg-gray-100 p-[8px] rounded-[10px]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<!-- Mobile Sidebar -->
+<div class="bg-gray-900 bg-opacity-0 w-full pointer-events-none h-full fixed top-0 left-0 z-10 duration-300 ease-in flex md:hidden"
+    id="overly"></div>
+<div id="sidebar"
+    class="w-[80%] sm:w-[300px] h-full fixed left-[-100%] top-0 flex flex-col md:hidden duration-500 origin-left bg-white z-10">
+    <div class="flex justify-between items-center p-5">
+        <img src=" {{ url_for('static', filename='imgs/logo.svg' ) }}" alt="Logo" class="w-[120px] h-auto">
+        <button id="close-sidebar" class="text-gray-800 focus:outline-none hover:bg-gray-100 p-[8px] rounded-[10px]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="flex flex-col items-start space-y-6 pt-5 p-5">
+        <a href="/" class="text-gray-500 duration-300 hover:text-gray-950 text-md">Home</a>
+        <a href="/" class="text-gray-500 duration-300 hover:text-gray-950 text-md">Overview</a>
+        <a href="/" class="text-gray-500 duration-300 hover:text-gray-950 text-md">More product</a>
+        <a href="/" class="text-gray-500 duration-300 hover:text-gray-950 text-md">About</a>
+        <a href="/contact" class="text-gray-500 duration-300 hover:text-gray-950 text-md">Contact</a>
+    </div>
+    <div class="flex flex-col p-5 justify-center items-center space-y-5 bg-white w-full absolute bottom-0">
+        <a href="/login" class="text-gry-400 text-md text-center"><span class="text-gray-500">Existing customer?</span>
+            Sign in</a>
+        <a href="/signup" class="btn primary w-full text-center">Sign up</a>
+    </div>
+</div>

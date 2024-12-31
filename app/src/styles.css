@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* buttons */
+@layer components {
+  .btn {
+    @apply px-5 py-2 rounded-full text-base font-normal duration-300 ease-in-out;
+  }
+  .btn.primary {
+    @apply bg-primary text-white hover:bg-primary-900;
+  }
+}

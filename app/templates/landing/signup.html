@@ -1,0 +1,52 @@
+{% extends 'layout/landing.html' %}
+
+{% block landing_content %}
+<div class="py-[60px]">
+    <div class="container">
+        <h2 class="text-center text-gray-950 text-3xl font-bold mb-5">Sign Up</h2>
+        <div class="w-full md:w-[400px] bg-gray-100 border border-gray-200 rounded-[10px] p-10 mx-auto">
+            <form action="" method="post">
+                <div class="mb-5">
+                    <label for="fristname" class="block text-gray-800 font-normal text-base mb-1">Frist name</label>
+                    <input type="text" name="fristname" id="fristname"
+                        class="w-full border duration-300 border-gray-200 rounded-[5px] p-2 outline-none focus:border-primary"
+                        required>
+                </div>
+                <div class="mb-5">
+                    <label for="lastname" class="block text-gray-800 font-normal text-base mb-1">Last Name</label>
+                    <input type="text" name="lastname" id="lastname"
+                        class="w-full border duration-300 border-gray-200 rounded-[5px] p-2 outline-none focus:border-primary"
+                        required>
+                </div>
+                <div class="mb-5">
+                    <label for="email" class="block text-gray-800 font-normal text-base mb-1">Email</label>
+                    <input type="email" name="email" id="email"
+                        class="w-full border duration-300 border-gray-200 rounded-[5px] p-2 outline-none focus:border-primary"
+                        required>
+                </div>
+                <div class="mb-5">
+                    <label for="password" class="block text-gray-800 font-normal text-base mb-1">Password</label>
+                    <input type="password" name="password" id="password"
+                        class="w-full border duration-300 border-gray-200 rounded-[5px] p-2 outline-none focus:border-primary"
+                        required>
+                </div>
+                <div class="mb-5">
+                    <label for="c_password" class="block text-gray-800 font-normal text-base mb-1">Confirm
+                        Password</label>
+                    <input type="password" name="password" id="c_password"
+                        class="w-full border duration-300 border-gray-200 rounded-[5px] p-2 outline-none focus:border-primary"
+                        required>
+                </div>
+                <div class="mb-5 flex items-center gap-x-5">
+                    <input type="checkbox" name="trams" id="trams" required>
+                    <label for="trams" class="block text-gray-800 font-normal text-base">I accept the
+                        <a href="" class="text-primary underline">terms and conditions</a></label>
+                </div>
+                <button class="btn primary w-full">Sign Up</button>
+            </form>
+        </div>
+        <p class="mt-10 text-gray-600 text-center text-base font-medium">Already a User? <a href="/login"
+                class="text-primary underline">Sign In</a></p>
+    </div>
+</div>
+{% endblock %}

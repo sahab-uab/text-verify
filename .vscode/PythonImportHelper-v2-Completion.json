@@ -1,0 +1,166 @@
+[
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 2,
+        "importPath": "app.views.admin",
+        "description": "app.views.admin",
+        "peekOfCode": "def dashboard():\n    return render_template('/admin/dashboard.html')",
+        "detail": "app.views.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "kind": 5,
+        "importPath": "app.views.admin",
+        "description": "app.views.admin",
+        "peekOfCode": "admin = Blueprint('admin', __name__)\n@admin.route('/')\ndef dashboard():\n    return render_template('/admin/dashboard.html')",
+        "detail": "app.views.admin",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app.views.landing",
+        "description": "app.views.landing",
+        "peekOfCode": "def index():\n    return render_template(\"/landing/home.html\")\n@landing.route(\"/login\")\ndef login():\n    return render_template(\"/landing/login.html\")\n@landing.route(\"/signup\")\ndef signup():\n    return render_template(\"/landing/signup.html\")\n@landing.route(\"/forget\")\ndef forget():",
+        "detail": "app.views.landing",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app.views.landing",
+        "description": "app.views.landing",
+        "peekOfCode": "def login():\n    return render_template(\"/landing/login.html\")\n@landing.route(\"/signup\")\ndef signup():\n    return render_template(\"/landing/signup.html\")\n@landing.route(\"/forget\")\ndef forget():\n    return render_template(\"/landing/forget.html\")\n@landing.route(\"/contact\")\ndef contact():",
+        "detail": "app.views.landing",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "app.views.landing",
+        "description": "app.views.landing",
+        "peekOfCode": "def signup():\n    return render_template(\"/landing/signup.html\")\n@landing.route(\"/forget\")\ndef forget():\n    return render_template(\"/landing/forget.html\")\n@landing.route(\"/contact\")\ndef contact():\n    return render_template(\"/landing/contact.html\")\n@landing.route(\"/contactform\")\ndef contactform():",
+        "detail": "app.views.landing",
+        "documentation": {}
+    },
+    {
+        "label": "forget",
+        "kind": 2,
+        "importPath": "app.views.landing",
+        "description": "app.views.landing",
+        "peekOfCode": "def forget():\n    return render_template(\"/landing/forget.html\")\n@landing.route(\"/contact\")\ndef contact():\n    return render_template(\"/landing/contact.html\")\n@landing.route(\"/contactform\")\ndef contactform():\n    return render_template(\"/landing/contactform.html\")",
+        "detail": "app.views.landing",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "kind": 2,
+        "importPath": "app.views.landing",
+        "description": "app.views.landing",
+        "peekOfCode": "def contact():\n    return render_template(\"/landing/contact.html\")\n@landing.route(\"/contactform\")\ndef contactform():\n    return render_template(\"/landing/contactform.html\")",
+        "detail": "app.views.landing",
+        "documentation": {}
+    },
+    {
+        "label": "contactform",
+        "kind": 2,
+        "importPath": "app.views.landing",
+        "description": "app.views.landing",
+        "peekOfCode": "def contactform():\n    return render_template(\"/landing/contactform.html\")",
+        "detail": "app.views.landing",
+        "documentation": {}
+    },
+    {
+        "label": "landing",
+        "kind": 5,
+        "importPath": "app.views.landing",
+        "description": "app.views.landing",
+        "peekOfCode": "landing = Blueprint(\"landing\", __name__)\n@landing.route(\"/\")\ndef index():\n    return render_template(\"/landing/home.html\")\n@landing.route(\"/login\")\ndef login():\n    return render_template(\"/landing/login.html\")\n@landing.route(\"/signup\")\ndef signup():\n    return render_template(\"/landing/signup.html\")",
+        "detail": "app.views.landing",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 2,
+        "importPath": "app.views.user_dashboard",
+        "description": "app.views.user_dashboard",
+        "peekOfCode": "def dashboard():\n    return render_template('/user/dashboard.html')",
+        "detail": "app.views.user_dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "user_dashboard",
+        "kind": 5,
+        "importPath": "app.views.user_dashboard",
+        "description": "app.views.user_dashboard",
+        "peekOfCode": "user_dashboard = Blueprint('user_dashboard', __name__)\n@user_dashboard.route('/')\ndef dashboard():\n    return render_template('/user/dashboard.html')",
+        "detail": "app.views.user_dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "app = create_app()\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "run",
+        "documentation": {}
+    }
+]

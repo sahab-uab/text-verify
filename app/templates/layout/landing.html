@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Header -->
+{% include 'inc/header.html' %}
+
+<!-- Main Section -->
+<main class="w-full">
+    {% block landing_content %}
+
+    {% endblock %}
+</main>
+
+<!-- Footer -->
+{% include 'inc/footer.html' %}
+{% endblock %}

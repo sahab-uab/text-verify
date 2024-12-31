@@ -1,0 +1,247 @@
+{% extends 'layout/landing.html' %}
+
+{% block landing_content %}
+<div class="bg-herobg w-full py-[100px] relative">
+    <div class="container text-center z-10 relative">
+        <h3
+            class="text-white text-4xl md:text-6xl text-center font-bold leading-[50px] md:leading-[75px] z-[2] ww-full md:w-[60%] mx-auto">
+            Don't want to
+            give out your phone number?
+            No Problem.
+            Use Ours.</h3>
+        <div class='flex items-center gap-5 justify-center mt-10 flex-wrap'>
+            <a href="" class="btn bg-white">Sing in</a>
+            <a href="" class="btn primary">Sing up</a>
+            <a href="javascript:void(0);" onclick="videoherovideomodelshow()"
+                class="btn primary flex items-center gap-x-2">
+                Learn More
+                <i class="ri-play-circle-line"></i>
+            </a>
+        </div>
+    </div>
+    <!-- bg pattern -->
+    <img class='absolute inset-0 w-full h-full pointer-events-none z-5'
+        src="{{ url_for('static', filename='imgs/heropattern.svg') }}">
+</div>
+<!-- hero video model -->
+<div id="herovideomodel" onclick="videoherovideomodelclose()"
+    class="fixed w-full h-full bg-gray-950 bg-opacity-35 backdrop-blur-lg z-[99] select-none duration-300 opacity-0 pointer-events-none flex items-center justify-center top-0 left-0">
+    <iframe class="w-[80%] h-[50%] md:h-[80%] rounded-lg duration-300 scale-50"
+        src="https://www.youtube.com/embed/6gMkOGyowho?si=z9lOk47mfDEBx7R7" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<!-- Receive SMS Services -->
+<section class="py-[50px]">
+    <div class="container text-center">
+        <h3 class="text-gray-950 text-lg font-medium text-center">Receive SMS & OTP From 900+ Services</h3>
+        {% include 'inc/brandslist.html' %}
+    </div>
+</section>
+
+<!-- text services -->
+<section class="py-[100px] bg-blue-600">
+    <div class="container">
+        <h1 class="text-white font-semibold text-center text-3xl md:text-5xl">Real US mobile numbers backed by physical
+            SIMs –
+            compatible with all platforms.</h1>
+        <p class="text-lg text-center text-white opacity-95 mt-4">Protect your personal information from data breaches
+            and
+            companies who resell your information.</p>
+
+        <div class="flex flex-col lg:flex-row mt-10">
+            <div class="w-[40%] pt-5 hidden lg:flex">
+                <button
+                    class="flex flex-col items-start justify-start border border-white bg-white bg-opacity-20 border-opacity-20 gap-2 p-5 rounded-s-lg h-fit">
+                    <span class="text-white text-lg font-bold">Text/SMS</span>
+                    <p class="text-white text-base font-normal text-left">Choose a service and immediately access a
+                        phone number to receive a verification code.</p>
+                </button>
+            </div>
+            <div class="flex lg:hidden items-center justify-center mb-5">
+                <button class="btn bg-white">Text/SMS</button>
+            </div>
+            <div class="w-full lg:w-[60%] overflow-hidden rounded-lg">
+                <img src="{{ url_for('static', filename='imgs/sms-verification-tutorial.webp') }}"
+                    alt="sms-verification-tutorial" class="w-full">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What we offer. -->
+<section class="py-[100px]">
+    <div class="container">
+        <div class="w-full md:w-[50%] mx-auto">
+            <h1 class="text-gray-950 font-semibold text-center text-3xl md:text-5xl">What we offer.</h1>
+            <p class="text-lg text-center text-gray-600 opacity-95 mt-4">All our phone numbers are from the US and can
+                be
+                bought in countries including the UK, South Africa, India, Canada, and France.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+            <div>
+                <i
+                    class="ri-secure-payment-line text-white text-lg bg-primary rounded-full w-[40px] h-[40px] flex items-center justify-center"></i>
+                <p class="text-primary text-base font-medium mt-3">Verify</p>
+                <h4 class="text-lg font-medium text-gry-950 mt-3">Bypass any text or voice verification.</h4>
+                <p class="text-base text-gray-600 mt-3">We offer real non-voip US based phone numbers for all major
+                    online platforms and mobile applications.
+                    Long and short-term number rentals available.</p>
+            </div>
+            <div>
+                <i
+                    class="ri-lock-star-line text-white text-lg bg-primary rounded-full w-[40px] h-[40px] flex items-center justify-center"></i>
+                <p class="text-primary text-base font-medium mt-3">Secure</p>
+                <h4 class="text-lg font-medium text-gry-950 mt-3">Give out our numbers instead of yours.</h4>
+                <p class="text-base text-gray-600 mt-3">We use strong encryption for all online sessions and accept
+                    cryptocurrency payments to allow you to protect your data from being shared by companies online.</p>
+            </div>
+            <div>
+                <i
+                    class="ri-settings-3-line text-white text-lg bg-primary rounded-full w-[40px] h-[40px] flex items-center justify-center"></i>
+                <p class="text-primary text-base font-medium mt-3">Automate</p>
+                <h4 class="text-lg font-medium text-gry-950 mt-3">Build apps using our powerful API.</h4>
+                <p class="text-base text-gray-600 mt-3">We offer a complete API reference for those who wish to
+                    integrate and scale their own applications using our phone numbers. Bulk discount pricing is
+                    available.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- get start -->
+<section class="py-[100px] bg-primary">
+    <div class="container flex flex-col items-center justify-center">
+        <h1 class="text-white font-semibold text-center text-3xl md:text-5xl">Get started today</h1>
+        <p class="text-lg text-center text-white opacity-95 mt-4 w-full md:w-[40%]">Sign-Up is quick, free, and easy. We
+            respect your
+            privacy. Your account will be ready to use within minutes.</p>
+        <div class="flex items-center justify-center mt-10">
+            <a href="" class="btn bg-white">Sing up now</a>
+        </div>
+    </div>
+</section>
+
+<!-- testimonial -->
+<section class="py-[100px]">
+    <div class="container">
+        <div class="w-full md:w-[50%] mx-auto">
+            <h1 class="text-gray-950 font-semibold text-center text-3xl md:text-5xl">Loved by users worldwide.</h1>
+            <p class="text-lg text-center text-gray-600 opacity-95 mt-4">Get a US based non-voip phone number accessible
+                from anywhere in the world.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+            <div class="shadow-lg p-6 rounded-2xl bg-white">
+                <p class="text-gray-950 text-lg font-normal">Literally took me 2 minutes to create a bunch of anonymous
+                    accounts for Twitter & Discord using your
+                    temporary phone verification service. Good job, guys.</p>
+                <div class="border-t border-gray-200 mt-5 pt-5 flex items-start justify-between">
+                    <div>
+                        <h1 class="text-base text-gray-950 font-medium">Digital Nomad</h1>
+                        <p class="text-sm text-gray-500 mt-1">Bangkok, Thailand</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="text-base text-gray-500 font-bold">4.0</span>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-line text-yellow-400 text-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-lg p-6 rounded-2xl bg-white">
+                <p class="text-gray-950 text-lg font-normal">Literally took me 2 minutes to create a bunch of anonymous
+                    accounts for Twitter & Discord using your
+                    temporary phone verification service. Good job, guys.</p>
+                <div class="border-t border-gray-200 mt-5 pt-5 flex items-start justify-between">
+                    <div>
+                        <h1 class="text-base text-gray-950 font-medium">Digital Nomad</h1>
+                        <p class="text-sm text-gray-500 mt-1">Bangkok, Thailand</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="text-base text-gray-500 font-bold">4.0</span>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-line text-yellow-400 text-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-lg p-6 rounded-2xl bg-white">
+                <p class="text-gray-950 text-lg font-normal">Literally took me 2 minutes to create a bunch of anonymous
+                    accounts for Twitter & Discord using your
+                    temporary phone verification service. Good job, guys.</p>
+                <div class="border-t border-gray-200 mt-5 pt-5 flex items-start justify-between">
+                    <div>
+                        <h1 class="text-base text-gray-950 font-medium">Digital Nomad</h1>
+                        <p class="text-sm text-gray-500 mt-1">Bangkok, Thailand</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="text-base text-gray-500 font-bold">4.0</span>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-line text-yellow-400 text-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-lg p-6 rounded-2xl bg-white">
+                <p class="text-gray-950 text-lg font-normal">Literally took me 2 minutes to create a bunch of anonymous
+                    accounts for Twitter & Discord using your
+                    temporary phone verification service. Good job, guys.</p>
+                <div class="border-t border-gray-200 mt-5 pt-5 flex items-start justify-between">
+                    <div>
+                        <h1 class="text-base text-gray-950 font-medium">Digital Nomad</h1>
+                        <p class="text-sm text-gray-500 mt-1">Bangkok, Thailand</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="text-base text-gray-500 font-bold">4.0</span>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-fill text-yellow-400 text-lg"></i>
+                        <i class="ri-star-s-line text-yellow-400 text-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- faq -->
+<section class="py-[100px] bg-gray-100">
+    <div class="container">
+        <div class="w-full md:w-[50%] mx-auto">
+            <h1 class="text-gray-950 font-semibold text-center text-3xl md:text-5xl">Frequently asked questions</h1>
+            <p class="text-lg text-center text-gray-600 opacity-95 mt-4">If you can’t find what you’re looking for,
+                contact our support team and someone will get back to you shortly!</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+            <div>
+                <h2 class="text-gray-950 text-1xl font-medium">Where are your numbers from?</h2>
+                <p class="text-base mt-4 text-gry-950">Our numbers come from major US phone companies. We guarantee you
+                    can verify any service, even those that don't accept virtual numbers such as Google.</p>
+            </div>
+            <div>
+                <h2 class="text-gray-950 text-1xl font-medium">Where are your numbers from?</h2>
+                <p class="text-base mt-4 text-gry-950">Our numbers come from major US phone companies. We guarantee you
+                    can verify any service, even those that don't accept virtual numbers such as Google.</p>
+            </div>
+            <div>
+                <h2 class="text-gray-950 text-1xl font-medium">Where are your numbers from?</h2>
+                <p class="text-base mt-4 text-gry-950">Our numbers come from major US phone companies. We guarantee you
+                    can verify any service, even those that don't accept virtual numbers such as Google.</p>
+            </div>
+            <div>
+                <h2 class="text-gray-950 text-1xl font-medium">Where are your numbers from?</h2>
+                <p class="text-base mt-4 text-gry-950">Our numbers come from major US phone companies. We guarantee you
+                    can verify any service, even those that don't accept virtual numbers such as Google.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

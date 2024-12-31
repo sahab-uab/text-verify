@@ -1,0 +1,22 @@
+{% extends 'layout/landing.html' %}
+
+{% block landing_content %}
+<div class="py-[60px]">
+    <div class="container">
+        <h2 class="text-center text-gray-950 text-3xl font-bold mb-5">Forgot Password?</h2>
+        <div class="w-full md:w-[400px] bg-gray-100 border border-gray-200 rounded-[10px] p-10 mx-auto">
+            <form action="" method="post">
+                <div class="mb-5">
+                    <label for="email" class="block text-gray-800 font-normal text-base mb-1">Email</label>
+                    <input type="email" name="email" id="email"
+                        class="w-full border duration-300 border-gray-200 rounded-[5px] p-2 outline-none focus:border-primary"
+                        required>
+                </div>
+                <button class="btn primary w-full">Reset</button>
+            </form>
+        </div>
+        <p class="mt-10 text-gray-600 text-center text-base font-medium">Remember password? <a href="/login"
+                class="text-primary underline">Sign in</a></p>
+    </div>
+</div>
+{% endblock %}
